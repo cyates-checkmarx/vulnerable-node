@@ -24,6 +24,7 @@ jobs:
       - name: Download Container Syft
         run: |
           wget https://github.com/anchore/syft/releases/download/v0.83.1/syft_0.83.1_linux_amd64.tar.gz
+          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin v0.83.1
           tar -xzvf syft_0.83.1_linux_amd64.tar.gz
           rm -rf syft_0.83.1_linux_amd64.tar.gz
       - name: Run Checkmarx One CLI Scan
