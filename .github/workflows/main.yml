@@ -41,4 +41,4 @@ jobs:
             --client-id ${{ secrets.CX_CLIENT_ID }} \
             --client-secret ${{ secrets.CX_CLIENT_SECRET }} \
             --sca-resolver ./ScaResolver \
-            --sca-resolver-params "-s ./ -n cyates-checkmarx/vulnerable-node -r /tmp/sca3348489497.json --scan-containers --containers-result-path ./.cxsca-container-results.json"
+            --sca-resolver-params "--scan-containers --containers-result-path .cxsca-container-results.json"
