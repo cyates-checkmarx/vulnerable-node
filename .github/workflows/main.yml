@@ -41,4 +41,4 @@ jobs:
             --client-id ${{ secrets.CX_CLIENT_ID }} \
             --client-secret ${{ secrets.CX_CLIENT_SECRET }} \
             --sca-resolver ./ScaResolver \
-            --sca-resolver-params "--scan-containers --containers-result-path ./results"
+            --sca-resolver-params "--scan-containers --containers-result-path ./.cxsca-container-results.json"
